@@ -1,0 +1,54 @@
+[editor]
+line_wrapping=false
+line_break_column=72
+auto_continue_multiline=true
+
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=0
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=nodemcu
+base_path=/home/sgmil/SharedDocs/Arduino/sketchbook/nodemcu
+description=
+file_patterns=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=0
+FILE_NAME_0=2226;Arduino;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2Fsketchbook%2FBlinkOTA%2FBlinkOTA.ino;0;4
+FILE_NAME_1=0;Arduino;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2Fsketchbook%2FBasicOTA%2FBasicOTA.ino;0;4
+
+[build-menu]
+NF_03_LB=Clean Up
+NF_03_CM=rm %d/%e.esp8266.esp8266.thingdev.elf && rm %d/%e.esp8266.esp8266.thingdev.bin 
+NF_03_WD=
+EX_00_LB=_Upload
+EX_00_CM=arduino-cli upload --port /dev/ttyUSB0 --fqbn esp8266:esp8266:thingdev %d
+EX_00_WD=
+ArduinoFT_00_LB=_Compile Arduino
+ArduinoFT_00_CM=arduino-cli compile -v --fqbn esp8266:esp8266:nodemcuv2 %d
+ArduinoFT_00_WD=
+ArduinoFT_01_LB=_Upload Arduino
+ArduinoFT_01_CM=arduino-cli upload -v --port /dev/ttyUSB0 --fqbn esp8266:esp8266:nodemcuv2 %d
+ArduinoFT_01_WD=
+ArduinoFT_02_LB=_Check Board
+ArduinoFT_02_CM=arduino-cli board list
+ArduinoFT_02_WD=
+filetypes=Arduino;
+
+[VTE]
+last_dir=/home/sgmil
