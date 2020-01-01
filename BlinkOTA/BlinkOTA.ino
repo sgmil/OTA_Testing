@@ -56,7 +56,7 @@ void setup() {
 
 unsigned long previousTime = millis();
 
-const unsigned long interval = 1000;
+const unsigned long interval = 100;
 
 void loop() {
   ArduinoOTA.handle();
