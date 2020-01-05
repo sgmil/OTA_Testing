@@ -5,18 +5,16 @@ ADC_MODE(ADC_VCC)
 
 // Test OTA using My_ESP8266_Functions
 
-
 #include "My_ESP8266_Functions.h"
 #include <string.h>
 using namespace std;
 
 static string IP = IP_ADDRESS; 
-//int IPlastThree=IP_LAST_THREE;
 MyWiFi wifi("ESP8266",IP);
 
 const byte led = 16;
 unsigned long previousTime = millis();
-const unsigned long interval = 1000;
+const unsigned long interval = 2000;
 
 void setup() {
   Serial.begin(115200); 
