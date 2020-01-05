@@ -1,19 +1,22 @@
 ADC_MODE(ADC_VCC)
-#define BOARD esp8266:esp8266:nodemcuv2
-#define IP_LAST_THREE 177
-#define PORT /dev/ttyUSB0
+#define BOARD "esp8266:esp8266:nodemcuv2"
+#define IP_ADDRESS "192.168.0.177"
+#define PORT "/dev/ttyUSB0"
 
 // Test OTA using My_ESP8266_Functions
 
 
 #include "My_ESP8266_Functions.h"
+#include <string.h>
+using namespace std;
 
-int IPlastThree=IP_LAST_THREE;
-MyWiFi wifi("ESP8266",IPlastThree);
+static string IP = IP_ADDRESS; 
+//int IPlastThree=IP_LAST_THREE;
+MyWiFi wifi("ESP8266",IP);
 
 const byte led = 16;
 unsigned long previousTime = millis();
-const unsigned long interval = 250;
+const unsigned long interval = 1000;
 
 void setup() {
   Serial.begin(115200); 

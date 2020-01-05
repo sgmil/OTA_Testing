@@ -29,10 +29,7 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=110;Arduino;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2Fsketchbook%2FOTA_Testing%2FMyBlinkOTA%2FMyBlinkOTA.ino;0;4
-FILE_NAME_1=312;Sh;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2Fscripts%2FArduinoOTAupload.sh;0;4
-FILE_NAME_2=93;Sh;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2Fscripts%2FArduinoUpload.sh;0;4
-FILE_NAME_3=239;Sh;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2Fscripts%2FArduinoCompile.sh;0;4
+FILE_NAME_0=306;Arduino;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2Fsketchbook%2FOTA_Testing%2FMyBlinkOTA%2FMyBlinkOTA.ino;0;4
 
 [build-menu]
 NF_03_LB=
@@ -65,4 +62,4 @@ NF_02_CM=
 NF_02_WD=
 
 [VTE]
-last_dir=/home/sgmil
+last_dir=/home/sgmil/C_Programming
