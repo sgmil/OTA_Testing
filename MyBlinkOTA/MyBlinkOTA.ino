@@ -6,10 +6,8 @@ ADC_MODE(ADC_VCC)
 // Test OTA using My_ESP8266_Functions
 
 #include "My_ESP8266_Functions.h"
-#include <string.h>
-using namespace std;
 
-static string IP = IP_ADDRESS; 
+String IP = IP_ADDRESS; 
 MyWiFi wifi("ESP8266",IP);
 
 const byte led = 16;
