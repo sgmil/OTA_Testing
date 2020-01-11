@@ -1,8 +1,9 @@
+// MyBlinkOTA.ino //
 ADC_MODE(ADC_VCC)
 #define BOARD "esp8266:esp8266:nodemcuv2"
 #define IP_ADDRESS "192.168.0.177"
 #define PORT "/dev/ttyUSB0"
-
+#define OTAok (BOARD=="esp8266:esp8266:nodemcuv2")
 // Test OTA using My_ESP8266_Functions
 
 #include "My_ESP8266_Functions.h"
@@ -19,13 +20,13 @@ void setup() {
   delay(10);
   Serial.println('\n');
   wifi.connectWiFi();
-  wifi.myOTAsetup();
+  if (OTAok) wifi.myOTAsetup();
   pinMode(led, OUTPUT);
   digitalWrite(led, 1);
 }
 
 void loop() {
-  wifi.myOTAhandle();
+  if (OTAok) wifi.myOTAhandle();
   unsigned long diff = millis() - previousTime;
   if (diff > interval) {
     digitalWrite(led, !digitalRead(led));  // Change the state of the LED
